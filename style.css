@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    padding : 0 ;
+    margin : 0 ;
+}
+body{
+    background : #d1d1d1 ;
+    font-family: "Nunito", sans-serif;  
+    height : 95vh ;
+    display : flex ; 
+    justify-content: center;
+    align-items: center;  
+}
+.container{
+    height : 70% ;
+    width : 30% ; 
+    background-color: #fff; 
+    border-radius : 10px ;
+
+}
+.container h2{
+    margin : 10px 20px; 
+}
+.container .tasks{
+    height : 65% ;
+    padding-top : 20px ;
+    overflow-y : scroll ;
+}
+.container .tasks .task{
+    height : 40px;
+    margin : 10px 50px ;
+    background : #eeeeee ;
+    display : flex ;
+    justify-content: space-around;
+    border-radius : 15px ;
+    text-align : center ;
+}
+.container .tasks .task .butonsTask{
+    padding :0 5px ;
+    display : flex ; 
+    margin-right : 5px ;
+}
+.container .tasks .task .butonsTask button{
+    height : 30px ;
+    width : 30px ;
+    margin : auto 5px;
+    cursor : pointer ;
+    font-size : 18px ;
+    border : none ;
+    border-radius : 5px ;
+}
+.checkedTask{
+    background-color : #6fca398f ;
+    color : green ;
+}
+.removeTask{
+    background-color : #ff67679a ;
+    color : #b30000 ;
+}
+.container .tasks .task p{
+    color : #161616 ;
+    font-size : 20px ;
+    margin : auto 10px;
+}
+.container #addTaskBtn{
+    margin-left: 350px;
+    margin-top: 10px;
+    height : 50px ;
+    width : 50px ; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size : 25px ;
+    border-radius : 50% ;
+    cursor : pointer ;
+    border : none ;
+    background : #68afff91 ;
+    color : #0000ff ;
+    transition : 0.3s all ;
+    z-index: -1;
+}
+.container #addTaskBtn:hover{
+    background : #479dff91 ;
+}
+
+/* overlay */ 
+
+.overlay{
+    position : fixed ; 
+    height : 105% ;
+    width : 100% ;
+    background : #00000060 ;
+    backdrop-filter: blur(10px); 
+    display : none ;
+    justify-content: center;
+    align-items: center;
+
+}
+.overlay .addNewTaskContainer{
+    height : 250px; 
+    width : 400px; 
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px ;
+}
+.overlay .addNewTaskContainer input{
+    font-size : 20px ;
+    height : 40px ;
+    outline : none ;
+    width : 280px ;
+    padding : 0 10px ;
+    border : 1px solid #000 ;
+    border-radius : 20px ;
+}
+.overlay .buttons button{
+    padding : 5px 15px ; 
+    font-size : 18px ;
+    border : none ;
+    border-radius : 20px ;
+    cursor : pointer ;
+    transition : 0.3s all ;
+}
+#cancel{
+    background : #ff4c4c83 ;
+    color : red ;
+}
+#cancel:hover{
+    background : #ff232383 ;
+}
+#submit{
+    background : #4ca0ff83 ;
+    color : blue ;
+}
+#submit:hover{
+    background : #0e7efd83 ;
+} 
+#tasksNumber{
+    position : fixed ;
+    top : 10px ;
+    right : 10px ;
+    height : 45px ; 
+    width : 100px ;
+    background-color : #ececec ;
+    border-radius : 10px ;
+}
+#tasksNumber p{
+    margin :8px 10px ;
+    font-size : 18px ;
+}

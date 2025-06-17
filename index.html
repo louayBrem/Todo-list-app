@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="website icon" type="png" href="../icons/todoList-icon.png">
+</head>
+<body>
+    <div class="overlay">
+        <div class="addNewTaskContainer">
+            <br>
+            <br>
+            <h2>Add new task :</h2>
+            <br>
+            <br>
+            <input type="text" id="taskInput" placeholder="Enter the name of the task">
+            <br>
+            <br>
+            <div class="buttons">
+                <button id="cancel">Cancel</button> 
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Tasks daily :</h2>
+        <div class="tasks">
+            <!--<p id="acunTasks">you don't have any task</p>-->
+        <!--
+            <div id="task">
+                <p id="nameTask">Learn English</p>
+                <div id="butonsTask">
+                    <button id="chekedTask">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button id="removeTask">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        -->
+        </div>
+        <button id="addTaskBtn" title="add new task"> 
+            <i class="fa-duotone fa-solid fa-plus"></i>
+        </button>
+    </div>
+    <span id="tasksNumber">
+        <p>Tasks : 0</p>
+    </span>
+    <script src="script.js"></script>
+</body>
+</html>
